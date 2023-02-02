@@ -24,8 +24,8 @@ class Solution{
         // return maxsum;
         
         long long curr_sum=0;
-        long long sum=INT_MIN;
-        
+        long long sum=INT_MIN;         // by using INT_MIN we are setting min -ve value so that our maxsum remains -1 as -1 is > all -ve numbers and then we will get
+                                       // our maximum sum as -1 or any greatest -ve number when array contains all -ve numbers
         for(int i=0;i<n;i++)
         {
             curr_sum+=arr[i];
